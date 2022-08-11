@@ -1,0 +1,49 @@
+<?php	
+	$conn = new mysqli("127.0.0.1", "root", "", "mydb");
+?>
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<title> Menu Principal </title>
+
+		<link rel="shortcut icon" type="image/x-icon" href="UABC_logo.png">
+		<link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="plugins/bootstrap/css/dbcss.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navigationBar">
+			  <a class="navbar-brand mb-0 h1" href="#">
+			  	<img src="UABC_logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+			  	Base de Datos Empresarial	</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			    	<li class="nav-item">
+				        <a class="nav-link active" href="Home.html">Home</a>
+				    </li>
+				    <li class="nav-item">
+				        <a class="nav-link" href="RegCli.html">Registrar Cliente</a>
+				    </li>
+				    <li class="nav-item">
+				        <a class="nav-link" href="RegEmp.html">Registrar Empleado</a>
+				    </li>
+				    <li class="nav-item">
+				        <a class="nav-link" href="RegPro.html">Registrar Producto</a>
+				    </li>
+			    </ul>
+			</nav>
+		</header>
+		<p class="display-1">Registrar</p>
+	</body>
+</html>

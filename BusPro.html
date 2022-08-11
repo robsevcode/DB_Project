@@ -1,0 +1,72 @@
+<?php	
+	$conn = new mysqli("127.0.0.1", "root", "", "mydb");
+?>
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<title> Menu Principal </title>
+
+		<link rel="shortcut icon" type="image/x-icon" href="UABC_logo.png">
+		<link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="plugins/bootstrap/css/dbcss.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navigationBar">
+			  <a class="navbar-brand mb-0 h1" href="#">
+			  	<img src="UABC_logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+			  	Base de Datos Empresarial	</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			    	<li class="nav-item">
+				        <a class="nav-link" href="Home.html">Home</a>
+				    </li>
+				    <li class="nav-item">
+				        <a class="nav-link" href="BusCli.html">Buscar Cliente</a>
+				    </li>
+				    <li class="nav-item">
+				        <a class="nav-link" href="BusEmp.html">Buscar Empleado</a>
+				    </li>
+				    <li class="nav-item">
+				        <a class="nav-link" href="BusPro.html">Buscar Producto</a>
+				    </li>
+			    </ul>
+			</nav>
+		</header>
+
+	<div>
+		<div class="containerItem">
+			<br>
+			<h1>Buscar Producto</h1>
+			<form action="BusPro.php" method="POST">
+				<label class="form-inline">Insertar ID:</label>
+				      <input class="form-control mr-sm-2" name="txtIDP" type="text" placeholder="ID..." maxlenght="45">
+
+				<label class="form-inline">Insertar nombre:</label>
+				      <input class="form-control mr-sm-2" name="txtNombreP" type="text" placeholder="Nombre..." maxlenght="45">
+				
+				<label class="form-inline">Insertar descripcion:</label>
+				      <input class="form-control mr-sm-2" name="txtDescripcion" type="text" placeholder="Descripcion..." maxlenght="45">
+
+				<label class="form-inline">Insertar precio:</label>
+				      <input class="form-control mr-sm-2" name="txtPrecio" type="txt" placeholder="Precio..." maxlength="45">
+
+				<br>
+				<button class="btn btn-light my-2 my-sm-0" name="btnEnviar" value="Enviar" id="btnSubmit" type="submit">Submit</button>
+			</form>
+		</div>
+		<hr>
+	</div>
+	</body>
+</html>

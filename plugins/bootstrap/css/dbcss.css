@@ -1,0 +1,265 @@
+
+/* Se trató de usar gradientes pero no funcionó, preguntar */
+body {
+	background-color: 	#dbdbdb;  
+}
+
+h1{
+	font-size: 			20px;
+}
+
+h3{
+	display: 			inline-block;
+}
+
+/* Se cambió el tipo de letra y se agregó efecto de esquinas redondas */
+.title{
+	font-family: 		Palatino Linotype;
+	border: 			1px solid #aaa;
+	border-radius: 		50px;
+	margin-left: 		0px;
+	height:  			50px;
+	width: 				1300px;
+	padding-left:  		10px;
+	text-align: 		left;
+	background-color:	#ccc; 
+	color: 				#391160;
+}
+
+.imagenes{
+	width: 				200px;
+	height: 			200px;
+}
+
+/* Fuente que dice Agregar pendientes */
+.font1{
+	padding: 			0px;
+	font-family: 		Arial;
+	font-size: 			13pt;
+	line-height: 		14pt;
+	font-weight: 		bold;
+	text-decoration:	none;
+	color: 				#34406D; 
+}
+
+/* Cuadro de texto */
+#txtUno{
+	margin-left: 		1000px;
+	margin-top: 		0px;
+	margin-right: 		5px;
+	padding-left: 		5px;
+	overflow: 			hidden; 
+	border: 			3px solid #aaa;
+	border-radius: 		4px;
+}
+
+
+
+.item {
+	position: 			relative;
+	margin-top: 		50px;
+	margin-left:  		10px;
+}
+
+
+
+/* Cuadro de texto al poner el puntero sobre el*/
+#txtUno:hover{
+	border: 			3px solid #391160;
+}
+
+/* Cuadro de texto al seleccionarlo*/
+#txtUno:focus{
+	border: 			3px solid #391160;
+}
+
+/* Cuadro de texto al seleccionarlo*/
+.itemMio:hover{
+	border: 			3px solid #391160;
+}
+
+/* Cuadro de texto al seleccionarlo*/
+.itemMio:focus{
+	border: 			3px solid #391160;
+}
+
+
+/* Cuadro que contiene la lista de pendientes */
+.pendientes{
+	background-color: 	#ccc; 
+	position: 			absolute;
+	margin-left: 		100px;
+	width: 				500px;
+	border: 			1px solid #aaa;
+	border-radius: 		10px;
+}
+
+/* Fuente usada como sub-titulos*/
+h2{
+	color: 				#391160;
+	text-align: 		center;
+}
+
+
+/* Fuente usada los elementos de la primera lista */
+.lista li{
+	text-align: 		left;
+	list-style: 		none;
+	margin-right: 		100px;
+	padding: 			3px 0 3px 5px;
+	border-bottom:		1px solid #cecece;
+}
+
+/* Clase de los elementos de la primera lista */
+.pendlist{
+	margin-top: 		10px;
+	font-weight: 		bold;
+	color: 				#391160;
+}
+
+/* Botones de la primera lista */
+.Btn1{
+	position: 			absolute;
+	right: 				10px;
+	margin-left: 		10px;
+	margin-right: 		10px;
+}
+
+
+/* Cuadro que contiene la lista de terminados */
+.terminado{
+	background-color: 	#ccc; 
+	position: 			absolute;
+	margin-left: 		700px;
+	text-align: 		left;
+	width: 				500px;
+	border: 			1px solid #aaa;
+	border-radius: 		10px;
+}
+
+/* Fuente usada los elementos de la segunda lista */
+.lista2 li{
+	text-align: 		left;
+	list-style: 		none;
+	font-size: 			10px;
+	margin-right: 		100px;
+	padding: 			3px 0 3px 5px;
+	border-bottom: 		1px solid #cecece;
+}
+
+/* Clase de los elementos de la segunda lista */
+.termlist{
+	margin-top: 		10px;
+	font-weight: 		bold;
+	color: 				#391160;
+}
+
+
+/* Botones que eliminan los elementos de la segunda lista */
+.Btn2{
+	position: 			absolute;
+	right: 				10px;
+	margin-left: 		10px;
+	margin-right: 		10px;
+}
+
+.btn-search {
+	  background: #424242;
+	  border-radius: 0;
+	  color: #fff;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: #1c1c1c;
+	}
+
+.btn-search:link, .btn-search:visited {
+  color: #fff;
+}
+.btn-search:active, .btn-search:hover {
+  background: #1c1c1c;
+  color: #fff;
+}
+
+.cart{
+	margin-right: 10px;
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.form-capture input{
+	display:  		inline-block;
+	width:			200px;
+
+}
+
+.form-capture label{
+	display:  		inline-block;
+	width: 			140px;
+	text-align: 	right;
+	
+}
+
+
+
